@@ -1,2 +1,1 @@
-# Hello-World
-первый проект для портфолио
+# Hello World
