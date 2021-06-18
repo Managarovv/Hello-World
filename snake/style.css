@@ -1,0 +1,21 @@
+button{
+	display: flex;
+	width: 100px;
+	left: 10%;
+	top: 40%;
+	margin: 10px;
+}
+
+#div{
+	width: 250px;
+	height: 150px;
+}
+
+canvas {
+  border: 1px solid black;
+  top: 50%;
+  left: 50%;
+  display: block;
+  position: fixed;
+  transform: translate(-50%,-50%);
+}
