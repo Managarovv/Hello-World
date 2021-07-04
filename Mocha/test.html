@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+	<script>
+    // включаем режим тестирования в стиле BDD
+    mocha.setup('bdd');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script>
+    // chai предоставляет большое количество функций. Объявим assert глобально
+    let assert = chai.assert;
+  </script>
+</head>
+<body>
+	<script>
+    function pow(x, n) {
+    	if (n < 0) return NaN;
+    	if (Math.round(n) != n) return NaN;
+    	return x**n;
+    }
+  </script>
+  <script src="js/testjs.js"></script>
+  <div id="mocha"></div>
+  <script>
+    mocha.run();
+  </script>
+  <!-- <div id="test" class="test" style=" display: none;">
+    <p>какой-то текст</p>
+  </div>
+  <div id="test1" class="test" style=" display: none;">
+    <p>какой-то текст</p>
+  </div>
+  <div id="test2" class="test" style=" display: none;">
+    <p>какой-то текст</p>
+  </div>
+  <script type="text/javascript" src="js/blok.js"></script> -->
+</body>
+</html>
