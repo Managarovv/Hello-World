@@ -30,3 +30,38 @@ describe("pow", function() {
 //    assert.equal(pow(3, 4), 81);
 //   });
 });
+describe("OBJ", function(){
+	describe("is obj", function () {
+		function makeTest() {
+			it("object it's realy object", function () {
+				assert.isObject(object);
+			})
+		}
+		makeTest()
+	})
+
+	describe("include", function(){
+		function makeTest() {
+			it(`OBJ включает elem1`, function () {
+				assert.include(object, {elem1: "el"});
+			})
+		}
+
+		// let object = {
+		// 	elem1: "el"
+		// }
+		makeTest()
+	})
+
+	describe("string", function () {
+		function makeTest(argument) {
+			it(`convert делает из number string ${argument}`, function () {
+				assert.isString(object.convert(argument));
+			})
+		}
+
+		for (var i = 0; i < 5; i++) {
+			makeTest(i);
+		}
+	})
+});
