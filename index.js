@@ -4,7 +4,7 @@ const app = require('express')()
 const host = 'localhost'
 const port = process.env.PORT || 3000
 
-app.use('/', express.static(__dirname + 'Overhaul/static'));
+app.use('/', express.static(__dirname + '/Overhaul/static'));
 /*app.get('/', (req, res) =>{
 	res.sendFile(`${__dirname}/static/index.html`)
 })*/
